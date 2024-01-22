@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<title>Document</title>
+<body>
+    <h1>Form</h1>
+    <form th:action="@{/ajouterPersonne}" th:object="${personne}" method="post">
+        <label>Nom :</label>
+        <input type="text" th:field="${personne.nom}" />
+        <br />
+        <label>Email :</label>
+        <input type="text" th:field="${personne.email}" />
+        <br />
+        <input type="submit" value="Enregistrer" />
+       </form>       
+</body>
+</html>
